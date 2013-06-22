@@ -1,20 +1,31 @@
 <!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
 <html>
 <head>
-  <title>Nylaw</title>
+  <title>Nobles and Yanez Law</title>
+  <!-- Basic Page Needs -->
+  <meta charset="utf-8">
+  <title>Nobles and Yanez Law | Civil and Criminal Trial Lawyers</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<ul>
-		<li><%= link_to "home", root_path %></li>
-		<li><%= link_to "about", about_path %></li>
-		<li><%= link_to "services", services_path %></li>
-		<li><%= link_to "contact", contact_path %></li>
-	</ul>
 
-<%= yield %>
+  <%= render 'layouts/header' %>
+
+  <%= yield %>
+
+  <%= render 'layouts/footer' %>
 
 </body>
 </html>
