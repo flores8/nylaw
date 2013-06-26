@@ -216,7 +216,7 @@ blockquote {
 	margin-left:-7px;
 }
 
-.colorTipContainer{
+.colorTipContainer{ 
 	position:relative;
 	text-decoration:none !important;
 	display:inline-block;
@@ -386,23 +386,23 @@ blockquote {
 
 * .icon {
 	display:inline-block;
-	background:url(../images/icons/icons/icons.png) no-repeat;
+	background:url("icons.png") no-repeat;
 	vertical-align:middle;
 	margin: -2px 4px 0 0;
 }
 
 * .icon.gray {
-	background:url(../images/icons/icons/icons-gray.png) no-repeat;
+	background:url("icons-gray.png") no-repeat;
 }
 
 * .icon.white {
-	background:url(../images/icons/icons/icons-white.png) no-repeat;
+	background:url("icons-white.png") no-repeat;
 }
 
 /* social */
 * .social-icon {
 	display:inline-block;
-	background:url(../images/icons/icons/social-icons.png) no-repeat;
+	background:url("social-icons.png") no-repeat;
 	vertical-align:middle;
 	margin:0 1px 5px 0;
 }
