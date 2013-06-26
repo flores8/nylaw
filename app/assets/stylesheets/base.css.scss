@@ -259,12 +259,12 @@ footer, .subscribe input.mail {
 
 /* arrow icons for flex slider  hover*/
 .flex-direction-nav li .next:hover{
-	background:$darkGrayText url(../images/icons/project-slider-arrow-right.png) no-repeat;
+	background:$darkGrayText url("project-slider-arrow-right.png") no-repeat;
 	background-position:55% 50%;
 }
 
 .flex-direction-nav li .prev:hover{
-	background:$darkGrayText url(../images/icons/project-slider-arrow-left.png) no-repeat;
+	background:$darkGrayText url("project-slider-arrow-left.png") no-repeat;
 	background-position:45% 50%;
 }
 	
