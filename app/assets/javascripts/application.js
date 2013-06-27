@@ -13,5 +13,5 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require jquery.flexslider
+//= require jquery.flexslider-min
 //= require_tree .
