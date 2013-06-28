@@ -15,6 +15,7 @@ class PagesController < ApplicationController
 
 	  def create
 	    @message = Message.new(params[:message])
+	    ContactForm.contact_form(@message).deliver
 	    
 	    if @message.valid?
 	      NotificationsMailer.new_message(@message).deliver
