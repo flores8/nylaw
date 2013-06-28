@@ -1,9 +1,10 @@
 class ContactForm < ActionMailer::Base
-  default from: "noreply@noblesyanezlaw.com"
-  default :to => "noblesyanezlaw@gmail.com"
+  default from: "admin@noblesyanezlaw.com"
+  default to: "admin@noblesyanezlaw.com"
 
   def contact(message)
+  	@email = 'admin@noblesyanezlaw.com'
   	@message = message
-    mail(subject: "[noblesyanezlaw.com] #{message.subject}")
+    mail(to: @email, subject: "[noblesyanezlaw.com] #{message.subject}")
   end
 end

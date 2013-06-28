@@ -10,6 +10,6 @@ $ ->
     titlesFactor: 0
 
 
-$(document).ready ->
+$ ->
   $(".flexslider").flexslider animation: "slide"
 

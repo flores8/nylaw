@@ -1,79 +1,107 @@
 <div class="container clearfix">
 
- <div class="sixteen columns"> <h1 class="page-title">Contact Us<span class="line"></span></h1>
+ <div class="sixteen columns"> 
+  <h1 class="page-title">Contact Us<span class="line"></span></h1>
  </div><!-- Page Title -->
  
  
- <div id="description">
+  <div id="description">
     <div class="sixteen columns">
       <div class="description top-3 bottom-2">
-      <p>
-        Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Cum sociis.
-      </p>
+        <p>
+          Maecenas faucibus mollis interdum. Vestibulum id ligula porta felis euismod semper. Curabitur blandit tempus porttitor. Cum sociis.
+        </p>
       </div>
     </div>
   </div><!-- End description -->
  
  
- <div class="sixteen columns"> <h2 class="title">Our Location<span class="line"></span></h2></div>
+  <div class="sixteen columns"> 
+    <h2 class="title">Our Location<span class="line"></span></h2>
+  </div>
  
- <!-- google map -->
+  <!-- google map -->
  
- <div class="sixteen columns google-map top-2">
+  <div class="sixteen columns google-map top-2">
  
-<iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=324+S.+Third,+St.+Suite+2+Las+Vegas,+NV+89101&amp;aq=&amp;sll=34.168218,-111.930907&amp;sspn=17.758819,33.728027&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=324+S+3rd+St+%232,+Las+Vegas,+Clark,+Nevada+89101&amp;z=14&amp;iwloc=A&amp;ll=36.167187,-115.1453&amp;output=embed"></iframe>
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=324+S.+Third,+St.+Suite+2+Las+Vegas,+NV+89101&amp;aq=&amp;sll=34.168218,-111.930907&amp;sspn=17.758819,33.728027&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=324+S+3rd+St+%232,+Las+Vegas,+Clark,+Nevada+89101&amp;z=14&amp;iwloc=A&amp;ll=36.167187,-115.1453&amp;output=embed"></iframe>
  
- </div>
- 
- <!-- End -->
+  </div>
  
  
- <!-- Start Contact Form -->
- <div class="eleven columns  bottom">    
+  <!-- Start Contact Form -->
+  <div class="eleven columns  bottom">    
     
-    <h2 class="title">Keep in Touch<span class="line"></span></h4>
+    <h2 class="title">Keep in Touch<span class="line"></span></h2>
     
     <div class="form">
     
-    <div id="note"></div><!-- End notification -->
+      <div id="note"></div><!-- End notification -->
     
-    <div id="fields">
+      <div id="fields">
+
+        <%= form_for @message, :url => contact_path do |form| %>
+          <fieldset class="fields">
+            <div class="form-box">
+              <%= form.label :name %>
+              <%= form.text_field :name %>
+            </div>
+            
+            <div class="field">
+              <%= form.label :email %>
+              <%= form.text_field :email %>
+            </div>
+            <div class="field">
+              <%= form.label :subject %>
+              <%= form.text_field :subject %>
+            </div>
+            
+            <div class="field">
+              <%= form.label :body %>
+              <%= form.text_area :body %>
+            </div>
+          </fieldset>
+          
+          <fieldset class="actions">
+            <%= form.submit "Send" %>
+          </fieldset>
+        <% end %>
     
-    <form id="ajax-contact-form" action="">
+        <form id="ajax-contact-form" action="">
     
-    <div class="form-box">
-      <label>Name <small>(required)</small></label>
-      <input type="text" name="name" class="text">
-    </div><!-- End Box -->
+          <div class="form-box">
+            <label>Name <small>(required)</small></label>
+            <input type="text" name="name" class="text">
+          </div><!-- End Box -->
     
-    <div class="form-box">
-      <label>Email <small>(required)</small></label>
-      <input type="text" name="email" class="text">
-    </div><!-- End Box -->
+          <div class="form-box">
+            <label>Email <small>(required)</small></label>
+            <input type="text" name="email" class="text">
+          </div><!-- End Box -->
     
-    <div class="form-box last">
-      <label>Subject </label>
-      <input type="text" name="subject" class="text">
-    </div><!-- End Box -->
+          <div class="form-box last">
+            <label>Subject </label>
+            <input type="text" name="subject" class="text">
+          </div><!-- End Box -->
     
-    <div class="form-box big">
-      <label>Message <small>(required)</small> </label>
-      <textarea name="message"></textarea>
-    </div><!-- End Box -->
+          <div class="form-box big">
+            <label>Message <small>(required)</small> </label>
+            <textarea name="message"></textarea>
+          </div><!-- End Box -->
     
-    <div class="clearfix"></div>
+          <div class="clearfix"></div>
     
-    <input type="submit" name="submit" value="Send Message" class="button medium color" />
+          <input type="submit" name="submit" value="Send Message" class="button medium color" />
     
-    </form>
+        </form>
     
-    </div><!-- End fields -->
+      </div><!-- End fields -->
     
-    </div>
+    </div><!-- End contact form -->
     
-    <!-- End contact form -->
     
- </div><!-- End column -->  
+    
+  </div><!-- End column -->  
  
  
  <!-- Start Sidebar Widgets -->
