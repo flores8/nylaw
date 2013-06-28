@@ -2,7 +2,8 @@ Nylaw::Application.routes.draw do
   root 'pages#home'
   get 'about' => "pages#about"
   get 'services' => "pages#services"
-  get 'contact' => "pages#contact"
+  resources :contact, except: [:update, :destroy, :show, :edit]
+
 
 
 

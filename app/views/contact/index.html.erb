@@ -39,12 +39,39 @@
       <div id="note"></div><!-- End notification -->
     
       <div id="fields">
+
+        <%= form_for :contact do |f| %>
+
+          <div class="form-box">
+            <%= f.label :name %>
+            <%= f.text_area :name %>
+          </div>
+         
+          <div class="form-box">
+            <%= f.label :email %>
+            <%= f.text_area :email %>
+          </div>
+
+          <div class="form-box last">
+            <%= f.label :subject %>
+            <%= f.text_area :subject %>
+          </div><!-- End Box -->
+
+          <div class="form-box big">
+            <%= f.label :message %>
+            <%= f.text_area :message %>
+          </div><!-- End Box -->
+         
+          <p>
+            <%= f.submit %>
+          </p>
+        <% end %>
     
         <form id="ajax-contact-form" action="">
     
           <div class="form-box">
             <label>Name <small>(required)</small></label>
-            <input type="text" name="name" class="text">
+            
           </div><!-- End Box -->
     
           <div class="form-box">

@@ -4,11 +4,11 @@
     <div class="sixteen columns">
       
 
-			  <div id="ei-slider" class="ei-slider"><!-- class="flexslider" or id="ei-slider" class="ei-slider"--> 
+			  <div class="flexslider"><!-- class="flexslider" or id="ei-slider" class="ei-slider"--> 
           <!-- Big images for slideshow --> 
-					<ul class="ei-slider-large"><!-- class="slides" or class="ei-slider-large" --> 
+					<ul class="slides"><!-- class="slides" or class="ei-slider-large" --> 
 	          <li>
-							<%= link_to image_tag("slider-1-1.png"), contact_path %>
+							<%= link_to image_tag("slider-1-1.png"), contact_index_path %>
 					  </li>
             <li>
               <%= link_to image_tag("slider-1-2.png"), about_path %>
@@ -18,13 +18,13 @@
             </li>
 	        </ul>
 
-          <!-- Small images for navigation --> 
+          <!-- Small images for navigation  
           <ul class="ei-slider-thumbs">
             <li class="ei-slider-element">Current</li>
             <li><a href="#">Contact Us</a><%= image_tag "thumb-1-1.png" %></li>
             <li><a href="#">About Us</a><%= image_tag "thumb-1-2.png" %></li>
             <li><a href="#">Our Services</a><%= image_tag "thumb-1-1.png" %></li>         
-          </ul>
+          </ul>-->
 			  </div>
 
       
@@ -44,7 +44,7 @@
           <p>Find out how we can help you with all your legal needs. </p>
         </div>
         <div class="four columns alpha">
-        	<%= link_to "Get in Touch Today", contact_path, class: "link" %>
+        	<%= link_to "Get in Touch Today", contact_index_path, class: "link" %>
         </div>
       </div>
     </div>
