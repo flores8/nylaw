@@ -5,7 +5,7 @@
     
       <div class="one-third column">
         <div class="logo">
-          <%= link_to image_tag("logo-name.png"), root_path, alt: "Nobles and Yanez - Criminal and Civil Trial Lawyers" %>
+          <%= link_to image_tag("logo-1.png"), root_path, alt: "Nobles and Yanez - Criminal and Civil Trial Lawyers" %>
         </div>
       </div><!-- End Logo -->
       
@@ -14,7 +14,7 @@
           <ul id="nav">
             <li><%= link_to "Home", root_path, class: "#{'active' if current_page?(root_path)}" %></li>
             <li><%= link_to "About", about_path, class: "#{'active' if current_page?(about_path)}" %></li>
-            <li><%= link_to "Services", services_path, class: "#{'active' if current_page?(services_path)}" %></li>
+            <!--<li><%= link_to "Services", services_path, class: "#{'active' if current_page?(services_path)}" %></li>-->
             <li><%= link_to "Contact", contact_index_path, class: "#{'active' if current_page?(contact_index_path)}" %></li>
           </ul>
         </nav>

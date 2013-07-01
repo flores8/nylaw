@@ -8,6 +8,20 @@
 @import "shortcodes.css.scss";		/* Css Styles for shortcodes */
 @import url("custom.css");        /* Css Styles File for any changes you want to add */
 
+/* Modifications
+================================================== */
+/* About Page */
+p.about {
+	font-size: 1.1em;
+	line-height: 1.8em;
+}
+
+p.team-bio {
+	margin-bottom: 15px;
+	font-size: 1.05em;
+	line-height: 1.8em;
+}
+
 /* orange Skin Colors
 ================================================== */
 
@@ -274,7 +288,7 @@ header {
 }
 
 .logo {
-	margin:28px 0;
+	margin:28px 0 0 0;
 }
 
 .selectnav { 
