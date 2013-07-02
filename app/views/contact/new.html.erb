@@ -32,7 +32,7 @@
   <!-- Start Contact Form -->
   <div class="eleven columns  bottom">    
     
-    <h2 class="title">Keep in Touch<span class="line"></span></h2>
+    <h2 class="title">Get in Touch<span class="line"></span></h2>
     
     <div class="form">
     
@@ -42,66 +42,57 @@
 
         <%= form_for :contact do |f| %>
 
+          <!-- Name --> 
           <div class="form-box">
             <%= f.label :name %>
-            <%= f.text_area :name %>
+            <%= f.text_field :name, class: "text", type: "text" %>
           </div>
-         
+
+          <!-- Email --> 
           <div class="form-box">
             <%= f.label :email %>
-            <%= f.text_area :email %>
+            <%= f.text_field :email, class: "text", type: "text" %>
           </div>
 
+          <!-- Subject --> 
           <div class="form-box last">
             <%= f.label :subject %>
-            <%= f.text_area :subject %>
-          </div><!-- End Box -->
+            <%= f.text_field :subject, class: "text", type: "text" %>
+          </div>
 
+          <!-- Message --> 
           <div class="form-box big">
             <%= f.label :message %>
             <%= f.text_area :message %>
-          </div><!-- End Box -->
-         
-          <p>
-            <%= f.submit %>
-          </p>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <%= f.submit "Send Message", class: "button medium color", action: "create", method: "post", controller: "contact" %>
+
         <% end %>
     
-        <form id="ajax-contact-form" action="">
-    
-          <div class="form-box">
-            <label>Name <small>(required)</small></label>
-            
-          </div><!-- End Box -->
-    
-          <div class="form-box">
-            <label>Email <small>(required)</small></label>
-            <input type="text" name="email" class="text">
-          </div><!-- End Box -->
-    
-          <div class="form-box last">
-            <label>Subject </label>
-            <input type="text" name="subject" class="text">
-          </div><!-- End Box -->
-    
-          <div class="form-box big">
-            <label>Message <small>(required)</small> </label>
-            <textarea name="message"></textarea>
-          </div><!-- End Box -->
-    
-          <div class="clearfix"></div>
-    
-          <input type="submit" name="submit" value="Send Message" class="button medium color" />
-    
-        </form>
     
       </div><!-- End fields -->
     
     </div><!-- End contact form -->
-    
+
+    <div class="eleven columns  bottom">
+
+    <div id="description" class="spanish">
+      <div class="description">
+        <p>
+          Consulte con un abogado que habla Español.
+        </p>
+      </div>
+    </div><!-- End description -->
+
+  </div>
     
     
   </div><!-- End column -->  
+
+  
  
  
  <!-- Start Sidebar Widgets -->
@@ -121,16 +112,16 @@
     <div class="clearfix"></div>
    
     <!-- Contact Details -->
-    <h2 class="title bottom-2">Social Contacts<span class="line"></span></h2>
+   <h2 class="title bottom-2">Social Contacts<span class="line"></span></h2>
    
-      <ul class="followers">
-        <li>
-          <%= link_to image_tag("facebook-social.png"), "https://www.facebook.com/NoblesYanezLaw" %>
-        </li>
-        <li>
-          <%= link_to image_tag("twitter-social.png"), "https://twitter.com/NoblesYanezLaw" %>
-        </li>
-      </ul>
+    <ul class="followers">
+      <li>
+        <%= link_to image_tag("facebook-social.png"), "https://www.facebook.com/NoblesYanezLaw" %>
+      </li>
+      <li>
+        <%= link_to image_tag("twitter-social.png"), "https://twitter.com/NoblesYanezLaw" %>
+      </li>
+    </ul>
  
  </div><!-- End Sidebar Widgets -->
  

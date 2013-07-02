@@ -94,10 +94,10 @@ a.link {
 }
 
 /* services icons */
-.color-1 { background:url(../../images/icons/services/webdesign-orange.png) no-repeat; width:45px; height:42px; }
-.color-2 { background:url(../../images/icons/services/branding-orange.png) no-repeat; width:50px; height:47px; }
-.color-3 { background:url(../../images/icons/services/development-orange.png) no-repeat; width:47px; height:46px; }
-.color-4 { background:url(../../images/icons/services/wordpress-orange.png) no-repeat; width:45px; height:44px; }
+.color-1 { background:url("criminal-law.png") no-repeat; width:45px; height:42px; }
+.color-2 { background:url("civil-law.png") no-repeat; width:50px; height:47px; }
+.color-3 { background:url("family-law.png") no-repeat; width:47px; height:46px; }
+.color-4 { background:url("personal-injury.png") no-repeat; width:45px; height:44px; }
 
 /* process icons */
 .color-5 { background:url("search-orange.png") no-repeat; width:39px; height:40px; }
@@ -763,7 +763,7 @@ a.twitter, a.facebook, a.skype, a.linkedin {
 
 
 /* Forms */
-input.text, textarea {
+input.text, textarea { 
 	border:1px solid #e5e5e5;
 	padding:12px 10px;
 	width:89%;

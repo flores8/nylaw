@@ -23,8 +23,8 @@ module Nylaw
       :address              => "smtp.zoho.com",
       :port                 => 465,
       :domain               => "noblesyanezlaw.com",
-      :user_name            => "noblesyanezlaw@gmail.com",
-      :password             => "temporary123",
+      :user_name            => "admin_nylaw",
+      :password             => "temporary",
       :authentication       => :plain,
       :enable_starttls_auto => true
     }

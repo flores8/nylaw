@@ -6,3 +6,7 @@
 $ ->
   $(".flexslider").flexslider animation: "slide"
 
+$ ->
+  $("#sti-menu").iconmenu()
+
+

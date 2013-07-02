@@ -39,34 +39,39 @@
       <div id="note"></div><!-- End notification -->
     
       <div id="fields">
-    
-        <form id="ajax-contact-form" action="">
-    
+
+        <%= form_for :contact do |f| %>
+
+          <!-- Name --> 
           <div class="form-box">
-            <label>Name <small>(required)</small></label>
-            <input type="text" name="name" class="text">
-          </div><!-- End Box -->
-    
+            <%= f.label :name %>
+            <%= f.text_field :name, class: "text", type: "text" %>
+          </div>
+
+          <!-- Email --> 
           <div class="form-box">
-            <label>Email <small>(required)</small></label>
-            <input type="text" name="email" class="text">
-          </div><!-- End Box -->
-    
+            <%= f.label :email %>
+            <%= f.text_field :email, class: "text", type: "text" %>
+          </div>
+
+          <!-- Subject --> 
           <div class="form-box last">
-            <label>Subject </label>
-            <input type="text" name="subject" class="text">
-          </div><!-- End Box -->
-    
+            <%= f.label :subject %>
+            <%= f.text_field :subject, class: "text", type: "text" %>
+          </div>
+
+          <!-- Message --> 
           <div class="form-box big">
-            <label>Message <small>(required)</small> </label>
-            <textarea name="message"></textarea>
-          </div><!-- End Box -->
-    
+            <%= f.label :message %>
+            <%= f.text_area :message %>
+          </div>
+
           <div class="clearfix"></div>
+
+          <%= f.submit "Send Message", class: "button medium color" %>
+
+        <% end %>
     
-          <input type="submit" name="submit" value="Send Message" class="button medium color" />
-    
-        </form>
     
       </div><!-- End fields -->
     
@@ -77,7 +82,7 @@
     <div id="description" class="spanish">
       <div class="description">
         <p>
-          Hable con un abogado quien habla Español
+          Consulte con un abogado que habla Español.
         </p>
       </div>
     </div><!-- End description -->
