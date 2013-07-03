@@ -8,19 +8,6 @@ Bundler.require(:default, Rails.env)
 
 module Nylaw
   class Application < Rails::Application
-    config.action_mailer.smtp_settings = {
-      :address              => "smtp.zoho.com",
-      :port                 => 465,
-      :domain               => "noblesyanezlaw.com",
-      :user_name            => "admin_nylaw",
-      :password             => "temporary",
-      :authentication       => :plain,
-      :enable_starttls_auto => true
-    }
-
-    config.action_mailer.default_url_options = {
-      :host => "noblesyanezlaw.com"
-    }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
@@ -32,5 +19,20 @@ module Nylaw
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     # config.i18n.default_locale = :de
+
+    config.action_mailer.smtp_settings = {
+      :address              => "smtp.sendgrid.net",
+      :port                 => 587,
+      :domain               => "noblesyanezlaw.com",
+      :user_name            => "nylaw",
+      :password             => "temporary123",
+      :authentication       => :plain,
+      :enable_starttls_auto => true
+    }
+
+    config.action_mailer.default_url_options = {
+      :host => "noblesyanezlaw.com"
+    }
+
   end
 end
