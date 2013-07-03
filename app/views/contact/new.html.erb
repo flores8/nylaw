@@ -40,7 +40,7 @@
     
       <div id="fields">
 
-        <%= form_for :contact do |f| %>
+        <%= form_for @message, :url => contact_path do |f| %>
 
           <!-- Name --> 
           <div class="form-box">
@@ -62,13 +62,13 @@
 
           <!-- Message --> 
           <div class="form-box big">
-            <%= f.label :message %>
-            <%= f.text_area :message %>
+            <%= f.label :body %>
+            <%= f.text_area :body %>
           </div>
 
           <div class="clearfix"></div>
 
-          <%= f.submit "Send Message", class: "button medium color", action: "create", method: "post", controller: "contact" %>
+          <%= f.submit "Send Message", class: "button medium color" %>
 
         <% end %>
     

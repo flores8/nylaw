@@ -1,5 +1,5 @@
 class ContactForm < ActionMailer::Base
-  default from: "admin@noblesyanezlaw.com"
+  default :from => "admin@noblesyanezlaw.com"
   default :to => "admin@noblesyanezlaw.com"
 
   def contact_form(message)
