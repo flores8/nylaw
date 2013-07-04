@@ -25,7 +25,7 @@ module Nylaw
       :port                 => 587,
       :domain               => "noblesyanezlaw.com",
       :user_name            => "nylaw",
-      :password             => "temporary123",
+      :password             => "Gh9pnl4X2FATfF",
       :authentication       => :plain,
       :enable_starttls_auto => true
     }
