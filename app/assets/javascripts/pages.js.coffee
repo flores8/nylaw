@@ -9,4 +9,6 @@ $ ->
 $ ->
   $("#sti-menu").iconmenu()
 
+$(".alert").alert()
+
 

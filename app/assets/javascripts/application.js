@@ -17,4 +17,5 @@
 //= require jquery.flexslider-min
 //= require jquery.iconmenu
 //= require jquery.easing.1.3.min
+//= require bootstrap.min
 //= require_tree .
