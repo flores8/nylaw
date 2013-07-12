@@ -4,6 +4,7 @@ Nylaw::Application.routes.draw do
   get 'services' => "pages#services"
   match 'contact', to: 'contact#new', via: :get
   match 'contact', to: 'contact#create', via: :post
+  get 'thanks' => "pages#thanks"
   #match 'contact', to: 'pages#contact', via: [:get, :post]
   #resources :contact, except: [:update, :destroy, :show, :edit]
 
