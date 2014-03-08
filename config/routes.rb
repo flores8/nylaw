@@ -10,8 +10,8 @@ Nylaw::Application.routes.draw do
   get 'sp' => "spanish#home"
   get 'sp/about' => "spanish#about"
   get 'sp/services' => "spanish#services"
-  match 'sp/contact', to: 'contact#new', via: :get
-  match 'sp/contact', to: 'contact#create', via: :post
+  match 'sp/contact', to: 'sp_contact#new', via: :get
+  match 'sp/contact', to: 'sp_contact#create', via: :post
   get 'sp/thanks' => "spanish#thanks"
 
 

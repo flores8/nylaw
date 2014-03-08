@@ -1,0 +1,2 @@
+module SpContactHelper
+end
