@@ -7,7 +7,7 @@ class SpContactController < ApplicationController
     @message = Message.new(params[:message])
     
     if @message.valid?
-      ContactForm.contact_form(@message).deliver
+      SpContactForm.sp_contact_form(@message).deliver
       redirect_to(sp_thanks_path, :notice => "Message was successfully sent.")
     else
       flash.now.alert = "Please fill all fields."
