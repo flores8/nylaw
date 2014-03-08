@@ -1,3 +1,16 @@
+<% content_for :english do %>
+  <div class="two-thirds column">
+    <nav id="menu" class="navigation">
+      <ul id="nav">
+        <li><%= link_to "Home", root_path, class: "#{'active' if current_page?(root_path)}" %></li>
+        <li><%= link_to "About", about_path, class: "#{'active' if current_page?(about_path)}" %></li>
+        <!--<li><%= link_to "Services", services_path, class: "#{'active' if current_page?(services_path)}" %></li>-->
+        <li><%= link_to "Contact", contact_path, class: "#{'active' if current_page?(contact_path)}" %></li>
+      </ul>
+    </nav>
+  </div><!-- End Menu -->
+<% end %>
+
 <div class="container clearfix">
 
   <!-- Page Title -->
@@ -9,7 +22,7 @@
       <div class="sixteen columns">
         <div class="description">
 	        <p>
-	          Consulte con un abogado que habla Español.
+	          <%= link_to "Consulte con un abogado que habla Español.", sp_path %>
 	        </p>
         </div>
       </div>

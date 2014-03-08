@@ -1,3 +1,16 @@
+<% content_for :english do %>
+  <div class="two-thirds column">
+    <nav id="menu" class="navigation">
+      <ul id="nav">
+        <li><%= link_to "Home", root_path, class: "#{'active' if current_page?(root_path)}" %></li>
+        <li><%= link_to "About", about_path, class: "#{'active' if current_page?(about_path)}" %></li>
+        <!--<li><%= link_to "Services", services_path, class: "#{'active' if current_page?(services_path)}" %></li>-->
+        <li><%= link_to "Contact", contact_path, class: "#{'active' if current_page?(contact_path)}" %></li>
+      </ul>
+    </nav>
+  </div><!-- End Menu -->
+<% end %>
+
 <div id="slider">
   <div class="container clearfix">
     
@@ -42,7 +55,7 @@
         <div class="eleven columns omega">
           <h2>Nobles &amp; Yanez</h2>
           <p>Find out how we can help you with all your legal needs. </p>
-          <p>Consulte con un abogado que <span class="color">habla Español</span>.</p>
+          <p>Consulte con un abogado que <span class="color"><%= link_to "habla Español", sp_path, class: "color" %></span>.</p>
         </div>
         <div class="four columns alpha">
         	<%= link_to "Get in Touch Today", contact_path, class: "link" %>

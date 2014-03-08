@@ -1,3 +1,16 @@
+<% content_for :spanish do %>
+  <div class="two-thirds column">
+    <nav id="menu" class="navigation">
+      <ul id="nav">
+        <li><%= link_to "Sp Home", sp_path, class: "#{'active' if current_page?(sp_path)}" %></li>
+        <li><%= link_to "Sp About", sp_about_path, class: "#{'active' if current_page?(sp_about_path)}" %></li>
+        <!--<li><%= link_to "Services", sp_services_path, class: "#{'active' if current_page?(sp_services_path)}" %></li>-->
+        <li><%= link_to "Sp Contact", sp_contact_path, class: "#{'active' if current_page?(sp_contact_path)}" %></li>
+      </ul>
+    </nav>
+  </div><!-- End Menu -->
+<% end %>
+
 <div class="container clearfix">
 
  <div class="sixteen columns"> 
