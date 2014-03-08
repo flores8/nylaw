@@ -1,0 +1,105 @@
+<div id="slider">
+  <div class="container clearfix">
+    
+    <div class="sixteen columns">
+      
+
+			  <div class="flexslider"><!-- class="flexslider" or id="ei-slider" class="ei-slider"--> 
+          <!-- Big images for slideshow --> 
+					<ul class="slides"><!-- class="slides" or class="ei-slider-large" --> 
+	          <li>
+							<%= link_to image_tag("slider-1-1.png"), contact_path %>
+					  </li>
+            <li>
+              <%= link_to image_tag("slider-1-2.png"), sp_about_path %>
+            </li>
+            <li>
+              <%= link_to image_tag("slider-1-3.png"), contact_path %>
+            </li>
+	        </ul>
+
+          <!-- Small images for navigation  
+          <ul class="ei-slider-thumbs">
+            <li class="ei-slider-element">Current</li>
+            <li><a href="#">Contact Us</a><%= image_tag "thumb-1-1.png" %></li>
+            <li><a href="#">About Us</a><%= image_tag "thumb-1-2.png" %></li>
+            <li><a href="#">Our Services</a><%= image_tag "thumb-1-1.png" %></li>         
+          </ul>-->
+			  </div>
+
+      
+    </div>
+      
+  </div><!-- End Container -->
+</div><!-- End Slider -->
+
+<div class="container clearfix">
+  
+  <!-- Main Call to Action --> 
+  <div id="welcome">
+    <div class="sixteen columns">
+      <div class="qoute">
+        <div class="eleven columns omega">
+          <h2>Nobles &amp; Yanez</h2>
+          <p>Find out how we can help you with all your legal needs. </p>
+          <p>Consulte con un abogado que <span class="color">habla Español</span>.</p>
+        </div>
+        <div class="four columns alpha">
+        	<%= link_to "Get in Touch Today", contact_path, class: "link" %>
+        </div>
+      </div>
+    </div>
+  </div><!-- End Welcome -->
+
+  <!-- Our Services --> 
+  <div class="services clearfix">
+    <div class="sixteen columns"> 
+    	<h2 class="title">Our Services <span class="line"></span></h2> 
+    </div>
+      
+    <ul id="sti-menu" class="sti-menu">
+        
+      <!-- Service #1 -->
+      <li class="four columns">
+        <a href="#">
+          <span data-type="icon" class="sti-icon sti-item color-1"></span>
+          <h2 data-type="mText" class="sti-item">Criminal Law</h2>
+          <p data-type="sText" class="sti-item"> We handle all misdemeanor and felony cases, including warrants, traffic tickets, sealing records, and juvenile cases. </p>
+        </a>
+      </li>
+      <!-- End Service #1 -->
+      
+      <!-- Service #2 -->
+      <li class="four columns">
+        <a href="#">
+          <span data-type="icon" class="sti-icon sti-item color-2"></span>
+          <h2 data-type="mText" class="sti-item">Civil Law</h2>
+          <p data-type="sText" class="sti-item"> We handle contract, landlord tenant disputes, civil rights violations, and other business needs.  </p>
+        </a>
+      </li>
+      <!-- End Service #2 -->
+      
+      <!-- Service #3 -->
+      <li class="four columns">
+        <a href="#">
+          <span data-type="icon" class="sti-icon sti-item color-3"></span>
+          <h2 data-type="mText" class="sti-item">Family Law</h2>
+          <p data-type="sText" class="sti-item"> We handle all divorce, child custody, name changes, and adoption cases.   </p>
+        </a>
+      </li>
+      <!-- End Service #3 -->
+      
+      <!-- Service #4 -->
+      <li class="four columns">
+        <a href="#">
+          <span data-type="icon" class="sti-icon sti-item color-4"></span>
+          <h2 data-type="mText" class="sti-item">Personal Injury</h2>
+          <p data-type="sText" class="sti-item"> We handle cases involving car accidents, slip and falls, dog bites, and medical malpractice cases. </p>
+        </a>
+      </li>
+      <!-- End Service #4 -->
+      
+    </ul> 
+  </div><!-- End Services -->
+</div> <!-- Ender Container Clearfix --> 
+

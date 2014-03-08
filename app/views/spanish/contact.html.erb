@@ -1,0 +1,135 @@
+<div class="container clearfix">
+
+ <div class="sixteen columns"> 
+  <h1 class="page-title">Contact Us<span class="line"></span></h1>
+ </div><!-- Page Title -->
+ 
+ 
+  <div id="description">
+    <div class="sixteen columns">
+      <div class="description top-3 bottom-2">
+        <p>
+          Conveniently located next to the Regional Justice Center Courthouse.
+        </p>
+      </div>
+    </div>
+  </div><!-- End description -->
+ 
+ 
+  <div class="sixteen columns"> 
+    <h2 class="title">Our Location<span class="line"></span></h2>
+  </div>
+ 
+  <!-- google map -->
+ 
+  <div class="sixteen columns google-map top-2">
+ 
+    <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=324+S.+Third,+St.+Suite+2+Las+Vegas,+NV+89101&amp;aq=&amp;sll=34.168218,-111.930907&amp;sspn=17.758819,33.728027&amp;t=m&amp;ie=UTF8&amp;hq=&amp;hnear=324+S+3rd+St+%232,+Las+Vegas,+Clark,+Nevada+89101&amp;z=14&amp;iwloc=A&amp;ll=36.167187,-115.1453&amp;output=embed"></iframe>
+ 
+  </div>
+ 
+ 
+  <!-- Start Contact Form -->
+  <div class="eleven columns  bottom">    
+    
+    <h2 class="title">Get in Touch<span class="line"></span></h2>
+    
+    <div class="form">
+    
+      <div id="note"></div><!-- End notification -->
+    
+      <div id="fields">
+
+        <%= form_for :contact do |f| %>
+
+          <!-- Name --> 
+          <div class="form-box">
+            <%= f.label :name %>
+            <%= f.text_field :name, class: "text", type: "text" %>
+          </div>
+
+          <!-- Email --> 
+          <div class="form-box">
+            <%= f.label :email %>
+            <%= f.text_field :email, class: "text", type: "text" %>
+          </div>
+
+          <!-- Subject --> 
+          <div class="form-box last">
+            <%= f.label :subject %>
+            <%= f.text_field :subject, class: "text", type: "text" %>
+          </div>
+
+          <!-- Message --> 
+          <div class="form-box big">
+            <%= f.label :message %>
+            <%= f.text_area :message %>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <%= f.submit "Send Message", class: "button medium color" %>
+
+        <% end %>
+    
+    
+      </div><!-- End fields -->
+    
+    </div><!-- End contact form -->
+
+    <div class="eleven columns  bottom">
+
+    <div id="description" class="spanish">
+      <div class="description">
+        <p>
+          Consulte con un abogado que habla Español.
+        </p>
+      </div>
+    </div><!-- End description -->
+
+  </div>
+    
+    
+  </div><!-- End column -->  
+
+  
+ 
+ 
+ <!-- Start Sidebar Widgets -->
+ <div class="five columns bottom">
+ 
+   <!-- Contact Details -->
+   <h2 class="title bottom-2">Contact Details<span class="line"></span></h2>
+   
+     <ul class="details top-3 bottom-2">
+       <li><span class="google_maps icon black"></span><p>324 S. Third, St. Suite 2</p></li>
+       <li><span class="phone icon black"></span><p>P: (702) 641-6001</p></li>
+       <li><span class="phone icon black"></span><p>F: (702) 641-6002</p></li>
+       <li><span class="e-mail icon black"></span><p>admin@noblesyanezlaw.com</p></li>
+       <li><span class="globe icon black"></span><p><%= link_to "www.noblesyanezlaw.com", root_path %></p></li>
+     </ul>
+    
+    <div class="clearfix"></div>
+   
+    <!-- Contact Details -->
+   <h2 class="title bottom-2">Social Contacts<span class="line"></span></h2>
+   
+    <ul class="followers">
+      <li>
+        <%= link_to image_tag("facebook-social.png"), "https://www.facebook.com/NoblesYanezLaw" %>
+      </li>
+      <li>
+        <%= link_to image_tag("twitter-social.png"), "https://twitter.com/NoblesYanezLaw" %>
+      </li>
+    </ul>
+ 
+ </div><!-- End Sidebar Widgets -->
+ 
+ 
+ <div class="clearfix"></div>
+   
+   
+   
+       
+     
+  </div><!-- <<< End Container >>> -->

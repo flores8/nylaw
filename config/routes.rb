@@ -5,6 +5,16 @@ Nylaw::Application.routes.draw do
   match 'contact', to: 'contact#new', via: :get
   match 'contact', to: 'contact#create', via: :post
   get 'thanks' => "pages#thanks"
+
+  # Spanish Version of Site
+  get 'sp' => "spanish#home"
+  get 'sp/about' => "spanish#about"
+  get 'sp/services' => "spanish#services"
+  match 'sp/contact', to: 'contact#new', via: :get
+  match 'sp/contact', to: 'contact#create', via: :post
+  get 'sp/thanks' => "spanish#thanks"
+
+
   #match 'contact', to: 'pages#contact', via: [:get, :post]
   #resources :contact, except: [:update, :destroy, :show, :edit]
 
